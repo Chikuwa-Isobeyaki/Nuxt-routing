@@ -11,6 +11,10 @@ export default {
     return {
       message: '/users/_id.vueを表示中'
     }
+  },
+
+  validate({ params }) {
+    return /^\d+$/.test(params.id)
   }
 }
 </script>
